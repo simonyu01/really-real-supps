@@ -1,0 +1,212 @@
+:root {
+    --bg-color: #D5D2FF;
+    --text-color1: #113045;
+    --text-color2: white;
+    --text-color3: black;
+    --primary-color: #113045;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.background-container {
+    background-color: var(--bg-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+    margin: 0;
+}
+
+.page-container {
+    margin: 0 12em;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--bg-color);
+    padding: 0 12em;
+    height: 4em;
+    align-items: center;
+}
+
+.nav-title {
+    color: var(--text-color1);
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 2em
+}
+
+.nav li {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    color: var(--text-color1);
+    text-decoration: none;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    opacity: 0.6;
+}
+
+.nav-item:hover {
+    opacity: 1;
+}
+
+.nav-item-active {
+    opacity: 1;
+}
+
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 5em;
+}
+
+.hero-title {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 64px;
+    line-height: 76px;
+    font-weight: 600;
+    margin: 0;
+    color: var(--text-color1);
+}
+
+.hero-subtitle {
+    font-family: 'Nunito', sans-serif;
+    font-size: 28px;
+    line-height: 33px;
+    font-weight: 600;
+    color: var(--text-color1);
+}
+
+.hero-img {
+    height: auto;
+    width: 100%;
+}
+
+.hero-img-container {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-primary {
+    width: 128px;
+    background-color: var(--primary-color);
+    height: 48px;
+    border-width: 0px;
+    border-radius: 8px;
+    color: var(--text-color2);
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+}
+
+.section-container {
+    margin: 0 -12em;
+}
+
+.section-title {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 32px;
+    color: var(--text-color1);
+}
+
+.section-text {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--text-color1);
+}
+
+.section-heading {
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-color1);
+}
+
+.info-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 12em 4em 12em;
+}
+
+.info-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+}
+
+.info-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    min-width: 350px;
+    min-height: 350px;
+    background-color: #E0DEFF;
+    border-radius: 16px;
+    padding: 1em;
+}
+
+.info-icon-container {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1em;
+    align-items: center;
+} 
+
+.info-icon {
+    width: 100%;
+}
+
+.release-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 12em 4em 12em;
+}
+
+.product-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+
+.product-card {
+    border: 1px solid black;
+    width: 10px;
+    height: 10px;
+
+}
+
+

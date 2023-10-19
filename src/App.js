@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import HomePage from "./pages/HomePage";
+
+import "./styles.css";
+
+//https://www.realtimecolors.com/?colors=130e01-ffffff-A0DDE4-113045-0CABB7&fonts=Lora-Nunito
+
+//https://www.realtimecolors.com/?colors=130e01-d5d2ff-61edff-113045-2EF084&fonts=Lora-Nunito
+
+//https://www.realtimecolors.com/?colors=113045-d5d2ff-61edff-113045-2EF084&fonts=Lora-Nunito
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className="background-container">
+        <div className="content">
+          <Navbar />
+          <div className="page-container">
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+            </Routes>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
