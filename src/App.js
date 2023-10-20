@@ -2,7 +2,11 @@ import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import HomePage from "./pages/HomePage";
 
-import "./styles.css";
+import "./stylesheets/styles.css";
+import "./stylesheets/homeStyles.css";
+import "./stylesheets/compStyles.css";
+import Footer from "./components/Footer";
+
 
 //https://www.realtimecolors.com/?colors=130e01-ffffff-A0DDE4-113045-0CABB7&fonts=Lora-Nunito
 
@@ -22,6 +26,7 @@ function App() {
             </Routes>
           </div>
         </div>
+        <Footer />
       </div>
     </div>
   );

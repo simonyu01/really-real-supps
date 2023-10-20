@@ -189,6 +189,7 @@
     width: 100%;
 }
 
+.review-section,
 .release-section {
     display: flex;
     flex-direction: column;
@@ -203,10 +204,73 @@
 }
 
 .product-card {
-    border: 1px solid black;
-    width: 10px;
-    height: 10px;
+    display: flex;
+    flex-direction: column;
+    min-width: 350px;
+    min-height: 350px;
+    background-color: #61EDFF;
+    border-radius: 16px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
 
+.product-img {
+    width: 100%;
+}
+
+.review-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+    width: 100%;
+    height: auto;
+}
+
+.review-card {
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+    background-color: #61EDFF;
+    border-radius: 16px;
+    height: 300px;
+}
+
+.review-img-container {
+    padding: 1em 2em 1em 1em;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    max-width: 300px;
+}
+
+.product-card-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 12em;
+}
+
+.footer-sections {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2em 0;
+    gap: 2em;
+}
+
+.footer-section {
+    max-width: 40%;
+
+}
+
+.footer-section:last-child {
+    margin-left: auto;
 }
 
 

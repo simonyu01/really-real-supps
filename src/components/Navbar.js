@@ -15,6 +15,7 @@ function NavBar() {
           <li>
           <CustomLink to="/about">About</CustomLink>
           </li>
+          
         </ul>
       </nav>
     </div>

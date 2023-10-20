@@ -2,6 +2,10 @@ import hero from "../assets/hero-img.png";
 import micro from "../assets/microscope.png";
 import trans from "../assets/trans-blob.png";
 import dose from "../assets/dose.png";
+import Pre from "../components/Pre";
+import Pill from "../components/Pill";
+import Pro from "../components/Pro";
+import ReviewCard from "../components/ReviewCard";
 
 function HomePage() {
   return (
@@ -27,20 +31,29 @@ function HomePage() {
           <h2 className="section-title" style={{ margin: "2em 0 2em 0" }}>
             New Releases
           </h2>
-          <div className = "product-cards">
-            <div className = "product-card">
-
+          <div className="product-cards">
+            <div className="product-card-container">
+              <div className="product-card">
+                <Pre color={"#FD8A8A"} />
+              </div>
+              <h3 className = "section-text">Watermelon Pre-Workout</h3>
             </div>
-            <div className = "product-card">
-
+            <div className="product-card-container">
+              <div className="product-card">
+                <Pre color={"#F1F7B5"} className="" />
+              </div>
+              <h3 className = "section-text">Mango Pre-Workout</h3>
             </div>
-            <div className = "product-card">
-
+            <div>
+              <div className="product-card">
+                <h3 className="section-text" style={{ fontSize: "24px" }}>
+                  View All
+                </h3>
+              </div>
             </div>
           </div>
         </div>
       </div>
-
       <div className="section-container">
         <div className="info-section">
           <h2 className="section-title" style={{ margin: "2em 0 2em 0" }}>
@@ -54,7 +67,7 @@ function HomePage() {
               <h3 className="section-heading" style={{ margin: "0" }}>
                 Proven Ingredients
               </h3>
-              <h4 className="section-text" style={{margin: "1em 0 0 0"}}>
+              <h4 className="section-text" style={{ margin: "1em 0 0 0" }}>
                 We steer clear of trendy or fad ingredients. Instead, we rely on
                 ingredients that are supported by research and have undergone
                 rigorous peer-reviewed tests to ensure quality and
@@ -68,7 +81,7 @@ function HomePage() {
               <h3 className="section-heading" style={{ margin: "0" }}>
                 Effective Dosages
               </h3>
-              <h4 className="section-text" style={{margin: "1em 0 0 0"}}>
+              <h4 className="section-text" style={{ margin: "1em 0 0 0" }}>
                 Quality ingredients are nothing without effective dosages.
                 That's why each ingredient in our supplements is included at
                 it's scientically proven effective dosage.
@@ -81,7 +94,7 @@ function HomePage() {
               <h3 className="section-heading" style={{ margin: "0" }}>
                 Full Transparency
               </h3>
-              <h4 className="section-text" style={{margin: "1em 0 0 0"}}>
+              <h4 className="section-text" style={{ margin: "1em 0 0 0" }}>
                 Our supplements are free of proprietary blends and cheap filler
                 ingredients, so you know exactly what you are paying for.
               </h4>
@@ -89,8 +102,42 @@ function HomePage() {
           </div>
         </div>
       </div>
-      <div>
-        <h1>lol</h1>
+      <div className="section-container" style={{ backgroundColor: "white" }}>
+        <div className="review-section">
+          <h2 className="section-title" style={{ margin: "2em 0 2em 0" }}>
+            Featured Reviews
+          </h2>
+          <div className="review-cards">
+            <ReviewCard
+              title="The Best Pre-Workout Ever"
+              stars={5}
+              description="Pre-workout usually makes me very jittery. But not this one!"
+              name="Ryan C."
+              img={<Pre />}
+            />
+            <ReviewCard
+              title="Can't Tell It's a Protein Shake"
+              stars={5}
+              description="Usually protein shakes feel to heavy, but the clear whey shakes are so refreshing!"
+              name="Anna K."
+              img={<Pro />}
+            />
+            <ReviewCard
+              title="Extremely Convenient"
+              stars={5}
+              description="Instead of mixing creatine with water, I just pop 4 pills everyday. Saves so much time"
+              name="Christine W."
+              img={<Pill />}
+            />
+            <ReviewCard
+              title="No Chalky Texture"
+              stars={5}
+              description="The worst part of creatine is the chalky texture. The best part of this creatine is the lack of chalky texture."
+              name="Adam Y."
+              img={<Pre />}
+            />
+          </div>
+        </div>
       </div>
     </div>
   );
