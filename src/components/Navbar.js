@@ -10,12 +10,17 @@ function NavBar() {
             <CustomLink to="/">Home</CustomLink>
           </li>
           <li>
-          <CustomLink to="/products">Products</CustomLink>
+            <CustomLink to="/products">Products</CustomLink>
           </li>
           <li>
-          <CustomLink to="/about">About</CustomLink>
+            <CustomLink to="/about">About</CustomLink>
           </li>
-          
+          <li>
+            <CustomLink to="/account">Account</CustomLink>
+          </li>
+          <li>
+            <CustomLink to="/cart">Cart</CustomLink>
+          </li>
         </ul>
       </nav>
     </div>
@@ -24,6 +29,7 @@ function NavBar() {
 
 function CustomLink({ to, children, ...props }) {
   const resolvedPath = useResolvedPath(to);
+  
   const isActive = useMatch({ path: resolvedPath.pathname });
   return (
     <Link

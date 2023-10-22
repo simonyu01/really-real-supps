@@ -6,9 +6,12 @@ import Pre from "../components/Pre";
 import Pill from "../components/Pill";
 import Pro from "../components/Pro";
 import ReviewCard from "../components/ReviewCard";
+import ProductCard from "../components/ProductCard.js";
+
 
 function HomePage() {
   return (
+    
     <div className="home">
       <div className="hero-section">
         <div className="hero-text">
@@ -33,9 +36,7 @@ function HomePage() {
           </h2>
           <div className="product-cards">
             <div className="product-card-container">
-              <div className="product-card">
-                <Pre color={"#FD8A8A"} />
-              </div>
+              <ProductCard id = {0} color="#FFADAD"/>
               <h3 className = "section-text">Watermelon Pre-Workout</h3>
             </div>
             <div className="product-card-container">

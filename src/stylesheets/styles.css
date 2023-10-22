@@ -141,9 +141,10 @@
 
 .section-text {
     font-family: 'Nunito', sans-serif;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 400;
     color: var(--text-color1);
+    text-decoration: none;
 }
 
 .section-heading {
@@ -206,11 +207,11 @@
 .product-card {
     display: flex;
     flex-direction: column;
-    min-width: 350px;
-    min-height: 350px;
+    width: 350px;
+    height: 350px;
     background-color: #61EDFF;
     border-radius: 16px;
-    cursor: pointer;
+    /* cursor: pointer; */
     justify-content: center;
     align-items: center;
 }
@@ -222,6 +223,7 @@
 .review-cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    flex-wrap: wrap;
     gap: 2em;
     width: 100%;
     height: auto;
@@ -233,7 +235,7 @@
     padding: 1em;
     background-color: #61EDFF;
     border-radius: 16px;
-    height: 300px;
+    flex: 1;
 }
 
 .review-img-container {
@@ -271,6 +273,17 @@
 
 .footer-section:last-child {
     margin-left: auto;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: var(--text-color1);
+}
+
+.social-icons {
+    color: var(--text-color1);
+    font-size: 32px;
 }
 
 

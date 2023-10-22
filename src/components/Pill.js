@@ -37,7 +37,7 @@ function Pill({ color, className }) {
         y="71"
         width="116"
         height="41"
-        fill="white"
+        fill={color}
         stroke="#113045"
         stroke-width="4"
       />

@@ -1,3 +1,15 @@
+:root {
+    --bg-color: #D5D2FF;
+    --text-color1: #113045;
+    --text-color2: white;
+    --text-color3: black;
+    --primary-color: #113045;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 .review-title {
     font-size: 24px;
     font-family: 'Nunito' sans-serif;
