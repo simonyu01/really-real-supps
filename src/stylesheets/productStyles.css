@@ -60,8 +60,23 @@
     align-items: center;
 }
 
+.small-product-card {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    height: 280px;
+    background-color: #61EDFF;
+    border-radius: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
 .big-svg {
     transform: scale(1.2);
+}
+
+.small-svg {
+    transform: scale(0.8);
 }
 
 .product-title {
@@ -83,24 +98,6 @@
     margin: 0.5em 0 0 0;
     font-size: 24px;
     color: var(--text-color1);
-}
-
-.flavor-button {
-    display: inline-block;
-    margin: 1rem 1rem 0 0;
-    border: 1px solid var(--text-color1);
-    padding: 1em;
-    border-radius: 8px;
-    cursor: pointer;
-    font-family: 'Nunito', sans-serif;
-  }
-
-.flavor-button input[type="radio"] {
-    display: none;
-}
-
-.flavor-button:hover {
-    background-color: #61EDFF;
 }
 
 .add-to-cart {
@@ -148,8 +145,86 @@
 
 .product-review {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     padding: 2em 12em 4em 12em;
 }
+
+.product-review-card {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+
+}
+
+.review-header-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.review-form {
+    max-height: 0;  
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.review-field {
+    min-height: 25vh;
+}
+
+.review-form-visible {
+    max-height: 100vh;
+}
+
+.star-rating {
+    display: inline-block;
+    font-size: 24px;
+    margin: 0 0 32px 0;
+}
+  
+.star {
+    cursor: pointer;
+}
+  
+.filled {
+    color: gold;
+}
+
+.cart-section {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 12em 4em 12em;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.cart-list {
+    list-style: none;
+}
+
+.cart-card {
+    display: flex;
+    margin: 1em 0 1em 0;
+    justify-content: center;
+}
+
+.cart-trash {
+    border-color: transparent;
+    padding: 0.5em;
+    background-color: red;
+    color: white;
+    border-radius: 4px;
+    margin-top: 1em;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
 
 

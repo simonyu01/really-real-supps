@@ -6,6 +6,7 @@ function Pro({ color, className }) {
       viewBox="0 0 200 206"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <path
         d="M2 39C2 26.8497 11.8497 17 24 17H176C188.15 17 198 26.8497 198 39V190C198 197.732 191.732 204 184 204H16C8.26801 204 2 197.732 2 190V39Z"

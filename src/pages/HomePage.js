@@ -41,7 +41,7 @@ function HomePage() {
             </div>
             <div className="product-card-container">
               <div className="product-card">
-                <Pre color={"#F1F7B5"} className="" />
+                <ProductCard id = {0} color="#F1F7B5"/>
               </div>
               <h3 className = "section-text">Mango Pre-Workout</h3>
             </div>
@@ -124,9 +124,9 @@ function HomePage() {
               img={<Pro />}
             />
             <ReviewCard
-              title="Extremely Convenient"
+              title="Great value"
               stars={5}
-              description="Instead of mixing creatine with water, I just pop 4 pills everyday. Saves so much time"
+              description="These multivitamins are not only tasty, but they are going to last me so long."
               name="Christine W."
               img={<Pill />}
             />

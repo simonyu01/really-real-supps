@@ -6,6 +6,7 @@ function Pill({ color, className }) {
       viewBox="0 0 200 204"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <mask id="path-1-inside-1_68_2" fill="white">
         <path

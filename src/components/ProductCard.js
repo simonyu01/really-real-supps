@@ -32,30 +32,36 @@ function ProductCard({id, color, className}) {
 
     let prodImg;
 
-    if(Number(id) === 0) {
+    if(Number(id) === 0 || Number(id) === 3) {
         prodImg = <Pre color = {color} className={className}/>
     }
-    else if(Number(id) === 1) {
+    else if(Number(id) === 1 || Number(id) === 2) {
         prodImg = <Pro color = {color} className={className}/>
     }
-    else if(Number(id) === 2){
+    else if(Number(id) === 4){
         prodImg = <Pill color = {color} className={className}/>
     }
-    else if(Number(id) === 3) {
+    else if(Number(id) === 5) {
         prodImg = <Bundle id = {0} className={className}/>
     }
-    else if(Number(id) === 4) {
+    else if(Number(id) === 6) {
         prodImg = <Bundle id = {1} className={className}/>
     }
     else {
         prodImg = <Bundle id = {2} className={className}/>
     }
 
-    // console.log(`card id: ${id}`);
-
-    const routeName = routeNames[id % 6];
+    const routeName = routeNames[id];
     let newClassName = "";
-    className !== undefined ? newClassName = "big-product-card" : newClassName = "product-card";
+    if(className === undefined) {
+        newClassName = "product-card";
+    }
+    else if(className === "big-svg") {
+        newClassName = "big-product-card";
+    }
+    else {
+        newClassName = "small-product-card"
+    }
     if(className === undefined) {
         return (
             <Link to = {`/products/${routeName}_${id}`} className = {newClassName}>

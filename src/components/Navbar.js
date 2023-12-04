@@ -29,8 +29,9 @@ function NavBar() {
 
 function CustomLink({ to, children, ...props }) {
   const resolvedPath = useResolvedPath(to);
+  const isActive = useMatch({ path: resolvedPath.pathname, 
+    end: resolvedPath.pathname === "/" ? true : false });
   
-  const isActive = useMatch({ path: resolvedPath.pathname });
   return (
     <Link
       to={to}
